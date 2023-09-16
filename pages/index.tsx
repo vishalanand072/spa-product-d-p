@@ -1,12 +1,9 @@
-import PDA_ConetentLeft from "@/components/ProductDesPage/contentLeft";
-import { Card, Image } from "@nextui-org/react";
+import Product_Page from "@/components/ProductDesPage";
 
 const Home = () => {
   return (
     <>
-      <div className="container mx-auto text-center">
-        <PDA_ConetentLeft></PDA_ConetentLeft>
-      </div>
+      <Product_Page></Product_Page>
     </>
   );
 };

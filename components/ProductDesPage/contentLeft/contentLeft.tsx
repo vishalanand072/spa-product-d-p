@@ -31,7 +31,7 @@ const PDA_ConetentLeft = () => {
 
   return (
     <>
-      <div className="flex w-full flex-col">
+      <div className="sticky top-20">
         <Tabs
           aria-label="Options"
           color="primary"

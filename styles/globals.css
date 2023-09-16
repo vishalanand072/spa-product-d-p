@@ -1,11 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  /* Cuastom Straikethrough for the disable button*/
+  .strikethrough {
+    position: relative;
+  }
+  .strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 25%;
+    top: 50%;
+    right: 25%;
+    border-top: 2px solid #a6a6a6;
 
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
 html,
 body,
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-size: 14px;
 }
