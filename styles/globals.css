@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  @media (max-width: "767px") {
-    .dnone {
-      display: none;
-    }
-  }
-}
-
 html,
 body,
 :root {

@@ -7,6 +7,7 @@ import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import Layout from "@/components/layout/layout";
 
+// Default fonts
 const helvetica = localFont({
   src: [
     {
@@ -31,6 +32,7 @@ const roboto = Roboto({
   display: "swap",
   weight: ["400", "700", "900"],
 });
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider
