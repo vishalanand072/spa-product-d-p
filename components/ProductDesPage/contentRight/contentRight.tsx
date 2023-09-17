@@ -9,7 +9,7 @@ const PDA_ContentRight = () => {
         <div className="md:text-[48px] -md:text-[32px] leading-[96%]">
           JONATHAN SIMKHAI
         </div>
-        <div> Lurex Linen Viscose Jacket in Conchiglia</div>
+        <div className="py-2"> Lurex Linen Viscose Jacket in Conchiglia</div>
         <div className="font-bold text-left">$225</div>
         <div className="py-4">
           <Select_PDA_Color></Select_PDA_Color>
