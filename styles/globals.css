@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-  /* Cuastom Straikethrough for the disable button*/
+  /* Cuastom Straikethrough for the disabled button*/
   .strikethrough {
     position: relative;
   }
@@ -28,4 +28,26 @@ body,
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   font-size: 14px;
+}
+/*--------------- Carousel Indicators ----------------*/
+
+.slick-dots.slick-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slick-dots.slick-thumb li {
+  width: 24px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: #a6a6a6;
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  background-color: black;
+  width: 35px;
 }

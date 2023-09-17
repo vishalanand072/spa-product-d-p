@@ -18,6 +18,7 @@ const PDA_ContentMiddle = () => {
             <div></div>
             {photos.map((val, ind) => {
               console.log((photos.length - count) % 3);
+              //Logic for two columns
               if (photos.length - count >= 3) {
                 return (
                   <div className="-mt-10">
@@ -44,7 +45,9 @@ const PDA_ContentMiddle = () => {
                     <div className="hidden">{(count = count + 3)}</div>
                   </div>
                 );
-              } else if (photos.length - count > 0) {
+              }
+              //Logic for 1 column
+              else if (photos.length - count > 0) {
                 return (
                   <div className="-mt-10">
                     <Image

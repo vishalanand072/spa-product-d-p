@@ -7,11 +7,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 const ProductCarousel = () => {
   const settings = {
+    autoplay: true,
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 200,
+
+    customPaging: function (i) {
+      return (
+        <div className="dot -mt-2">
+          <div>&nbsp;</div>
+        </div>
+      );
+    },
+    dotsClass: "slick-dots slick-thumb",
   };
 
   return (
