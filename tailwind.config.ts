@@ -11,6 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        //Media query to acess conditional css on Tailwind for small devices
+
         "-2xl": { max: "1535px" },
         // => @media (max-width: 1535px) { ... }
 
