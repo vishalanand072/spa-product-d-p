@@ -21,7 +21,7 @@ const PDA_ContentMiddle = () => {
               //Logic for two columns
               if (photos.length - count >= 3) {
                 return (
-                  <div className="-mt-10">
+                  <div key={ind} className="-mt-10">
                     <Image
                       isZoomed
                       width="100%"
@@ -49,7 +49,7 @@ const PDA_ContentMiddle = () => {
               //Logic for 1 column
               else if (photos.length - count > 0) {
                 return (
-                  <div className="-mt-10">
+                  <div key={ind} className="-mt-10">
                     <Image
                       isZoomed
                       width="100%"

@@ -13,6 +13,7 @@ const Select_PDA_Color = () => {
         orientation="horizontal"
         value={selected}
         onValueChange={setSelected}
+        className="py-2"
       >
         <CustomRadio value="Conchiglia" className="text-center">
           <Image src="../assets/ProductImage/Color-Varient-1.png"></Image>

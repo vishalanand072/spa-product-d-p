@@ -12,7 +12,7 @@ const ProductCarousel = () => {
     infinite: true,
     speed: 200,
 
-    customPaging: function (i) {
+    customPaging: function () {
       return (
         <div className="dot -mt-2">
           <div>&nbsp;</div>
@@ -29,8 +29,8 @@ const ProductCarousel = () => {
       </div>
       <div className="-mt-10 pb-8">
         <Slider {...settings}>
-          {photos.map((item) => (
-            <div>
+          {photos.map((item, index) => (
+            <div key={index}>
               <Image src={item.src}></Image>
             </div>
           ))}
