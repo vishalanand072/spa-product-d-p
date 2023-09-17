@@ -1,3 +1,4 @@
+import ProductCarousel from "./Carousel/productCrausel";
 import ContentBottom from "./ContentBottom/contentBottom";
 import PDA_ConetentLeft from "./contentLeft/contentLeft";
 import PDA_ContentMiddle from "./contentMiddle/contentMiddle";
@@ -10,8 +11,11 @@ const Product_Page = () => {
         <div className="-lg:order-1">
           <PDA_ConetentLeft></PDA_ConetentLeft>
         </div>
-        <div className="col-span-2 ">
+        <div className="col-span-2 -lg:hidden">
           <PDA_ContentMiddle></PDA_ContentMiddle>
+        </div>
+        <div className="w-2/3 mx-auto lg:hidden">
+          <ProductCarousel></ProductCarousel>
         </div>
         <div className="md:pt-18 -lg:pt-2 -lg:col-span-2">
           <PDA_ContentRight></PDA_ContentRight>

@@ -4,7 +4,7 @@ import React from "react";
 import { CustomRadioRounded } from "@/components/globalComponents/customRadioRounded";
 
 const Select_PDA_Size = () => {
-  const [selected, setSelected] = React.useState("Conchiglia");
+  const [selected, setSelected] = React.useState("L");
   return (
     <>
       <div className="gap-2 grid grid-cols-2 pb-3">

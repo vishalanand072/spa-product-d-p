@@ -12,26 +12,23 @@ const PDA_ConetentLeft = () => {
     {
       id: 1,
       title: "delivery",
-      content:
-        "The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar lavishness by night and by day: a blazer in a linen blend shot with lurex for a shimmering surface that shines like a star in the sky. it has a straight fit with well defined shoulders and a shawl collar culminating in a button and has been flawlessly finished with three jet pockets with a sartorial feel.",
+      content: "This Is Delivery",
     },
     {
       id: 2,
       title: "fit",
-      content:
-        "The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar lavishness by night and by day: a blazer in a linen blend shot with lurex for a shimmering surface that shines like a star in the sky. it has a straight fit with well defined shoulders and a shawl collar culminating in a button and has been flawlessly finished with three jet pockets with a sartorial feel.",
+      content: "This is Fit",
     },
     {
       id: 4,
       title: "share",
-      content:
-        "The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar lavishness by night and by day: a blazer in a linen blend shot with lurex for a shimmering surface that shines like a star in the sky. it has a straight fit with well defined shoulders and a shawl collar culminating in a button and has been flawlessly finished with three jet pockets with a sartorial feel.",
+      content: "This Share",
     },
   ];
 
   return (
     <>
-      <div className="sticky top-20">
+      <div className="sticky top-20 text-left">
         <Tabs
           aria-label="Options"
           color="primary"
@@ -59,29 +56,35 @@ const PDA_ConetentLeft = () => {
                 className="text-left ml-0 pl-0"
               >
                 {item.content}
-                <div className="my-4">
-                  See the
-                  <Link
-                    color="foreground"
-                    href="#"
-                    underline="always"
-                    className="pl-1"
-                  >
-                    EDITORS NOTE
-                  </Link>
-                </div>
-                <div>
-                  Learn about the
-                  <Link
-                    color="foreground"
-                    href="#"
-                    underline="always"
-                    className="pl-1"
-                  >
-                    DESIGNER
-                  </Link>
-                </div>
               </div>
+              {item.id === 0 ? (
+                <div>
+                  <div className="my-4">
+                    See the
+                    <Link
+                      color="foreground"
+                      href="#"
+                      underline="always"
+                      className="pl-1"
+                    >
+                      EDITORS NOTE
+                    </Link>
+                  </div>
+                  <div>
+                    Learn about the
+                    <Link
+                      color="foreground"
+                      href="#"
+                      underline="always"
+                      className="pl-1"
+                    >
+                      DESIGNER
+                    </Link>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </Tab>
           ))}
         </Tabs>

@@ -1,6 +1,6 @@
 import { Image } from "@nextui-org/react";
-import { photos } from "./productList";
-import HeartFav from "@/components/globalComponents/heartCheckBox";
+import { photos } from "../productList/productList";
+import HeartFav from "@/components/globalComponents/heartFav";
 
 const PDA_ContentMiddle = () => {
   let count = 0;
