@@ -64,16 +64,16 @@ const HeaderTop = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <Image src="../../assets/Search.svg" alt="Search"></Image>
-        <Image src="../../assets/icon-bag.svg" alt="icon-bag"></Image>
+        <Image src="../../assets/icons/Search.svg" alt="Search"></Image>
+        <Image src="../../assets/icons/icon-bag.svg" alt="icon-bag"></Image>
         <Image
-          src="../../assets/Account-icon.svg"
+          src="../../assets/icons/Account-icon.svg"
           alt="Account"
           className="-lg:hidden"
         ></Image>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="hd:hidden"
+          className="lg:hidden"
         />
       </NavbarContent>
 
