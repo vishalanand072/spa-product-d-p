@@ -17,7 +17,7 @@ const PDA_ContentMiddle = () => {
             </div>
             <div></div>
             {photos.map((val, ind) => {
-              console.log((photos.length - count) % 3);
+              //console.log((photos.length - count) % 3);
               //Logic for two columns
               if (photos.length - count >= 3) {
                 return (
