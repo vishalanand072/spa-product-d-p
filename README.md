@@ -1,6 +1,19 @@
-# SPA Product Page 
+# SPA Product Page Assignment @ Mcfadyen
 
 PDP is a Next Js Application .
+
+# Problem Statement 
+
+##Convert Figma design to responsive (Mobile and Desktop) React SPA..
+
+## Behavior, Desktop
+* Images scroll with the user down the page. Content on the left and right sticks.
+* When the bottom of the last image is reached, a sticky scroll releases, allowing the user to navigate the rest of the page. 
+* The heart is sticky, resting in the corner of the entire scroll of the image block.
+
+## Behaviour, Mobile
+* Users swipe to view more imagery in carousel format.
+* The indicator below the carousel changes to reflect the current position in the carousel.
 
 ## Installation
 
